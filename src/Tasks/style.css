@@ -1,0 +1,55 @@
+.section__list {
+    list-style: none;
+    padding: 0px;
+}
+
+.section__listItem {
+    padding: 10px;
+    border-bottom: 2px solid  #ebe9e9;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__listItem--hidden {
+    display: none;
+}
+
+.section__itemButtons {
+    min-height: 27px;
+    min-width: 27px;
+    max-height: 27px;
+    max-width: 27px;
+    border: none;
+    background-color: #e21c43;
+    color: white;
+    transition: 0.5s;
+}
+
+.section__itemButtons:hover {
+    background-color: #eb3b5e;
+}
+
+.section__itemButtons--status {
+    background-color: green;
+    transition: 0.5s;
+}
+
+.section__itemButtons--status:hover {
+    background-color: rgb(3, 153, 3);
+}
+
+.section__itemButtons:active {
+    border: solid 1px #414141;
+}
+
+.section__content {
+    text-align: left;
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.section__content--done {
+    text-decoration: line-through;
+}
+

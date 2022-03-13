@@ -1,0 +1,42 @@
+.section__button {
+    border: none;
+    background: none;
+    min-width: 160px;
+    color: teal;
+}
+
+.section__button:hover {
+    color: rgb(13, 156, 156);
+}
+
+.section__button:active {
+    color: rgb(35, 194, 194);
+    border: solid 1px rgb(41, 41, 41);
+}
+
+.section__button:disabled {
+    color: rgb(179, 179, 179);
+}
+
+@media (max-width: 767px) {
+    .section__button {
+        border: none;
+        background: none;
+        min-width: 160px;
+        color: teal;
+        margin: 5px;
+    }
+}
+
+.section__buttons {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .section__buttons {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
