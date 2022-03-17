@@ -3,7 +3,7 @@ import "./style.css";
 const Tasks = (props) => (
     <ul className="section__list">
         {props.tasks.map(task => (
-            <li
+            <li key={task.id}
                 className={`section__listItem${(task.done && props.hideDoneTasks) ? " section__listItem--hidden" : ""}`}
             >
                 <button className="section__itemButtons section__itemButtons--status">{task.done ? "✔" : ""}
