@@ -2,6 +2,7 @@ import React from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
+import Section from "./Section";
 
 const tasks = [
   { id: 1, content: "zrobić zakupy", done: true },
@@ -13,23 +14,19 @@ const hideDoneTasks = false;
 function App() {
   return (
     <main>
-      <header className="header">
+      <header>
         <h1 className="header__title">Lista zadań</h1>
       </header>
-      <section className="section">
-        <h2 className="section__header">Dodaj nowe zadanie</h2>
-        <Form />
-      </section>
-
-      <section className="section">
-        <div className="section__filters">
-          <h2 className="section__header--noBorder">Lista zadań</h2>
-          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks}/>
-        </div>
-        <div className="section__container">
-          <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks}/>
-        </div>
-      </section>
+      <Section
+        title="Dodaj nowe zadanie"
+        container={<Form />}
+      />
+      <Section
+        title="Lista zadań"
+        filtersContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        container={<Tasks
+          tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+      />
     </main>
   );
 }
