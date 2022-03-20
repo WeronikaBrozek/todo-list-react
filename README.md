@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To-Do List is a simple app, the only thing that it does is looking awesome. You can't use it as for know functionality is not added yet. 
+To-Do List is a simple app, the only thing that it does is looking awesome. You can't use it as for now functionality is not added yet. 
 
 
 Link to the app: [To-Do List]( https://weronikabrozek.github.io/todo-list-react/)
