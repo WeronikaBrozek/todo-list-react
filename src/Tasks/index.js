@@ -9,7 +9,7 @@ const Tasks = (props) => (
                 <button className="section__itemButtons section__itemButtons--status">{task.done ? "✔" : ""}
                 </button>
                 <span className={`section__content ${task.done ? "section__content--done" : ""}`}>
-                {task.content}
+                    {task.content}
                 </span>
                 <button className="section__itemButtons">🗑
                 </button>

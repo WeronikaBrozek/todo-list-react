@@ -23,8 +23,7 @@ function App() {
       <Section
         title="Lista zadań"
         filtersContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
-        container={<Tasks
-        tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        container={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
       />
     </main>
   );
