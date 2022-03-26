@@ -1,17 +1,17 @@
 import "./style.css";
 
 const Tasks = (props) => (
-    <ul className="section__list">
+    <ul className="list">
         {props.tasks.map(task => (
             <li key={task.id}
-                className={`section__listItem${(task.done && props.hideDoneTasks) ? " section__listItem--hidden" : ""}`}
+                className={`list__element${(task.done && props.hideDoneTasks) ? " list__element--hidden" : ""}`}
             >
-                <button className="section__itemButtons section__itemButtons--status">{task.done ? "✔" : ""}
+                <button className="list__buttons list__buttons--status">{task.done ? "✔" : ""}
                 </button>
-                <span className={`section__content ${task.done ? "section__content--done" : ""}`}>
+                <span className={`list__content ${task.done ? "list__content--done" : ""}`}>
                     {task.content}
                 </span>
-                <button className="section__itemButtons">🗑
+                <button className="list__buttons">🗑
                 </button>
             </li>
         ))}

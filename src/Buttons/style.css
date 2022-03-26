@@ -1,4 +1,4 @@
-.section__button {
+.filters__button {
     border: none;
     background: none;
     min-width: 160px;
@@ -6,21 +6,21 @@
     transition: 0.5s;
 }
 
-.section__button:hover {
+.filters__button:hover {
     color: rgb(13, 156, 156);
 }
 
-.section__button:active {
+.filters__button:active {
     color: rgb(35, 194, 194);
     border: solid 1px rgb(41, 41, 41);
 }
 
-.section__button:disabled {
+.filters__button:disabled {
     color: rgb(179, 179, 179);
 }
 
 @media (max-width: 767px) {
-    .section__button {
+    .filters__button {
         border: none;
         background: none;
         min-width: 160px;
@@ -29,12 +29,12 @@
     }
 }
 
-.section__buttons {
+.filters {
     display: flex;
 }
 
 @media (max-width: 767px) {
-    .section__buttons {
+    .filters {
         display: flex;
         flex-direction: column;
         padding: 10px;
