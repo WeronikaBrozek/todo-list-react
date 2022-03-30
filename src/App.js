@@ -5,20 +5,22 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 
-const tasks = [
-  { id: 1, content: "zrobić zakupy", done: true },
-  { id: 2, content: "odrobić pracę domową", done: false },
-];
-
-
 
 function App() {
 
   const [hideDoneTasks, setHideDoneTasks] = useState(false);
+  const [tasks, setTasks] = useState([
+    { id: 1, content: "zrobić zakupy", done: true },
+    { id: 2, content: "odrobić pracę domową", done: false },
+  ]);
 
   const toggleHideDoneTasks = () => {
     setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
   }
+
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !== id));
+  };
 
   return (
     <main>
@@ -35,7 +37,7 @@ function App() {
             hideDoneTasks={hideDoneTasks}
             toggleHideDoneTasks={toggleHideDoneTasks}
           />}
-        container={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        container={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} removeTask={removeTask} />}
       />
     </main>
   );
