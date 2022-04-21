@@ -4,6 +4,7 @@
     min-width: 160px;
     color: teal;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .filters__button:hover {

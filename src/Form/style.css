@@ -35,6 +35,7 @@
     padding: 5px;
     min-width: fit-content;
     transition: 1s;
+    cursor: pointer;
 }
 
 .form__button:hover {

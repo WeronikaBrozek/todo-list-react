@@ -25,6 +25,7 @@
     background-color: #e21c43;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .list__buttons:hover {
