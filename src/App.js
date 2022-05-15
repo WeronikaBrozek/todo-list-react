@@ -15,8 +15,10 @@ function App() {
   const [hideDoneTasks, setHideDoneTasks] = useState(false);
 
   const toggleHideDoneTasks = () => {
-    setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
-  }
+    if (tasks.some(task => task.done === true)) {
+      setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
+    };
+  };
 
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
