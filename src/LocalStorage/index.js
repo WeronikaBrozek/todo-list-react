@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 
-const UseLocalStorage = () => {
-    const getFromLocalStorage = () => {
-        const localTasks = localStorage.getItem("tasks");
-        
-        return localTasks ? JSON.parse(localTasks) : [];
-    };
+const useLocalStorage = () => {
+    const getFromLocalStorage = () =>
+        JSON.parse(localStorage.getItem("tasks")) || [];
 
     const [tasks, setTasks] = useState(getFromLocalStorage);
 
@@ -16,4 +13,4 @@ const UseLocalStorage = () => {
     return [tasks, setTasks]
 };
 
-export default UseLocalStorage;
+export default useLocalStorage;

@@ -4,14 +4,10 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import UseLocalStorage from "./LocalStorage";
-
-
+import useLocalStorage from "./LocalStorage";
 
 function App() {
-
-  const [tasks, setTasks] = UseLocalStorage();
-
+  const [tasks, setTasks] = useLocalStorage();
   const [hideDoneTasks, setHideDoneTasks] = useState(false);
 
   const toggleHideDoneTasks = () => {
