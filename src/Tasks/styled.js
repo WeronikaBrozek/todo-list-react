@@ -1,6 +1,6 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
- export const List = styled.ul`
+export const List = styled.ul`
     list-style: none;
     padding: 0px;
     margin: 10px 0px;
@@ -13,7 +13,7 @@ export const Item = styled.li`
     display: flex;
     justify-content: space-between;
 
-    ${({hidden}) => hidden && css`
+    ${({ hidden }) => hidden && css`
         display: none;
     `}
 `;
@@ -23,12 +23,12 @@ export const Content = styled.span`
     width: 100%;
     padding: 5px 15px;
     
-    ${({done}) => done && css`
+    ${({ done }) => done && css`
         text-decoration: line-through;
     `}
 `;
 
-export const Button =styled.button`
+export const Button = styled.button`
     min-height: 27px;
     min-width: 27px;
     max-height: 27px;
@@ -47,7 +47,7 @@ export const Button =styled.button`
         border: solid 1px #414141;
     }
 
-    ${({toggleDone}) => toggleDone && css`
+    ${({ toggleDone }) => toggleDone && css`
         background-color: green;
         transition: 0.5s;
 
