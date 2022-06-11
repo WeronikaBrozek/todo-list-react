@@ -27,8 +27,8 @@ export const Input = styled.input`
 
 export const Button = styled.button`
     height: 35px;
-    background-color: teal;
-    color: white;
+    background-color: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
     border: none;
     font-weight: 400;
     margin:5px;
@@ -38,12 +38,12 @@ export const Button = styled.button`
     cursor: pointer;
 
     &:hover {
-        background-color: rgb(5, 145, 145);
+        background-color: ${({ theme }) => theme.color.gossamer};
         transform: scale(1.1);
     }
 
     &:active {
-        border: solid 1px rgb(44, 44, 44);
-        background-color: rgb(38, 187, 187);  
+        border: solid 1px ${({ theme }) => theme.color.mineShaft};
+        background-color: ${({ theme }) => theme.color.java};  
     }
 `;

@@ -8,7 +8,7 @@ export const List = styled.ul`
 
 export const Item = styled.li`
     padding: 10px;
-    border-bottom: 2px solid  #ebe9e9;
+    border-bottom: 2px solid  ${({ theme }) => theme.color.mercury};
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -34,25 +34,25 @@ export const Button = styled.button`
     max-height: 27px;
     max-width: 27px;
     border: none;
-    background-color: #e21c43;
-    color: white;
+    background-color: ${({ theme }) => theme.color.crimson};
+    color: ${({ theme }) => theme.color.white};
     transition: 0.5s;
     cursor: pointer;
 
     &:hover {
-        background-color: #eb3b5e;
+        background-color: ${({ theme }) => theme.color.amaranth};
     }
 
     &:active {
-        border: solid 1px #414141;
+        border: solid 1px ${({ theme }) => theme.color.tundora};
     }
 
     ${({ toggleDone }) => toggleDone && css`
-        background-color: green;
+        background-color: ${({ theme }) => theme.color.japaneseLaurel};
         transition: 0.5s;
 
         &:hover {
-            background-color: rgb(3, 153, 3);
+            background-color: ${({ theme }) => theme.color.green};
         }
     `}
 `;

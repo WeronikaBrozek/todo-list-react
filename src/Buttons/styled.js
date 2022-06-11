@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Filters = styled.div`
     display: flex;
@@ -14,28 +14,28 @@ export const Button = styled.button`
     border: none;
     background: none;
     min-width: 160px;
-    color: teal;
+    color: ${({ theme }) => theme.color.teal};
     transition: 0.5s;
     cursor: pointer;
 
     &:hover {
-        color: rgb(13, 156, 156);
+        filter: brightness(110%);
     }
 
     &:active {
-        color: rgb(35, 194, 194);
-        border: solid 1px rgb(41, 41, 41);
+        filter: brightness(120%);
+        border: solid 1px ${({ theme }) => theme.color.mineShaft};
     }
 
     &:disabled {
-        color: rgb(179, 179, 179);
+        color: ${({ theme }) => theme.color.nobel};
     }
 
     @media (max-width: 767px) {
         border: none;
         background: none;
         min-width: 160px;
-        color: teal;
+        color: ${({ theme }) => theme.color.teal};
         margin: 5px;
     }
 `;
