@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const ListForm = styled.form`
     max-width: 1000px;
@@ -10,7 +10,7 @@ export const ListForm = styled.form`
     width: 100%;
     padding: 15px 0px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         display: flex;
         flex-direction: column;
     }

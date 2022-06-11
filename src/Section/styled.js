@@ -18,7 +18,7 @@ export const Header = styled.header`
     display: flex;
     justify-content: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         display: flex;
         flex-wrap: wrap;
     }

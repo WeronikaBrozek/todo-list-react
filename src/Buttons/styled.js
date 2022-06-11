@@ -31,7 +31,7 @@ export const Button = styled.button`
         color: ${({ theme }) => theme.color.nobel};
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         border: none;
         background: none;
         min-width: 160px;

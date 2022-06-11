@@ -12,5 +12,8 @@ export const theme = {
         tundora: "#414141", 
         green: "#06BC06", 
         japaneseLaurel: "#039903", 
-    }
+    },
+    breakpoint: {
+        mobileMax: 767,
+    },
 };
