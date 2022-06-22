@@ -1,7 +1,7 @@
-import React, {useState, useRef} from "react";
-import {ListForm, Input, Button} from "./styled"
+import React, { useState, useRef } from "react";
+import { ListForm, Input, Button } from "./styled"
 
-const Form = ({addNewTask}) => {
+const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
 
     const onFormSubmit = (event) => {
@@ -15,16 +15,16 @@ const Form = ({addNewTask}) => {
 
     const inputRef = useRef(null);
 
-    return(
+    return (
         <ListForm onSubmit={onFormSubmit}>
-            <Input 
-            value={newTaskContent}
-            type="text" required
-            autoFocus placeholder="Co jest do zrobienia?" 
-            input ref={inputRef}
-            onChange={(event) => setNewTaskContent(event.target.value)}
+            <Input
+                value={newTaskContent}
+                type="text" required
+                autoFocus placeholder="Co jest do zrobienia?"
+                input ref={inputRef}
+                onChange={(event) => setNewTaskContent(event.target.value)}
             />
-            <Button onClick={ () => inputRef.current.focus()}>Dodaj zadanie</Button>
+            <Button onClick={() => inputRef.current.focus()}>Dodaj zadanie</Button>
         </ListForm>
     );
 };

@@ -1,4 +1,4 @@
-import {MainSection, Title, Header, Container} from "./styled";
+import { MainSection, Title, Header, Container } from "./styled";
 
 const Section = ({ title, container, filtersContent }) => (
   <MainSection>
