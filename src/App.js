@@ -28,7 +28,7 @@ function App() {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        container={<Form addNewTask={addNewTask} />}
+        content={<Form addNewTask={addNewTask} />}
       />
       <Section
         title="Lista zadań"
@@ -39,7 +39,7 @@ function App() {
             toggleHideDoneTasks={toggleHideDoneTasks}
             setAllDone={setAllDone}
           />}
-        container={
+        content={
           <Tasks
             tasks={tasks}
             hideDoneTasks={hideDoneTasks}

@@ -1,13 +1,13 @@
 import { MainSection, Title, Header, Container } from "./styled";
 
-const Section = ({ title, container, filtersContent }) => (
+const Section = ({ title, content, filtersContent }) => (
   <MainSection>
     <Header>
       <Title>{title}</Title>
       {filtersContent}
     </Header >
     <Container>
-      {container}
+      {content}
     </Container>
   </MainSection>
 );
