@@ -8,7 +8,7 @@ export const ListForm = styled.form`
     flex-wrap: wrap;
     align-self: flex-start;
     width: 100%;
-    padding: 15px 0px;
+    padding: 15px 0;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         display: flex;

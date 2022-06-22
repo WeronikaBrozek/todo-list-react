@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const MainSection = styled.section` 
     margin: 10px 0px;
     background-color: ${({ theme }) => theme.color.white};
-    box-shadow: 0px 0px 7px 2px ${({ theme }) => theme.color.mercury};
+    box-shadow: 0 0 7px 2px ${({ theme }) => theme.color.mercury};
 `;
 
 export const Title = styled.h1`
-    margin: 5px 0px;
+    margin: 5px 0;
     font-size: 125%;
     width: 100%;
 `;
